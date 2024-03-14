@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/climbing-stairs/description/
 const cache: number[] = [];
 
+// O(n^2)
 export function climbStairsByRecursion(n: number): number {
 	if (n <= 2) return n;
 	if (!cache[n]) {
@@ -9,6 +10,7 @@ export function climbStairsByRecursion(n: number): number {
 	return cache[n];
 }
 
+// O(n)
 export function climbStairsByLoop(n: number): number {
 	if (n <= 2) {
 		return n;
