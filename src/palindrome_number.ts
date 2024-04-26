@@ -7,7 +7,6 @@ export function isPalindromeLoop(x: number): boolean {
 	for (let i = str.length - 1; i >= 0; i--) {
 		revStr += str[i];
 	}
-	console.log(str, revStr);
 	return str === revStr;
 }
 
