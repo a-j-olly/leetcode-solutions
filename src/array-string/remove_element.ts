@@ -22,6 +22,5 @@ export function removeElementReplace(nums: number[], val: number): number {
 			k++;
 		}
 	}
-	console.log(nums);
 	return k;
 }
